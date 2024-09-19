@@ -1,9 +1,12 @@
-
+import { DarkModeToggle } from "@/components/toggle/DarkModeToggle";
 
 export default function Home() {
-  return (
-    <main>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </main>
-  );
+	return (
+		<main className={``}>
+			<div className={`flex p-4 gap-4`}>
+				<DarkModeToggle />
+			</div>
+      <div></div>
+		</main>
+	);
 }
