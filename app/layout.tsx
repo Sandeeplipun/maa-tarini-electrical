@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ubuntu, ubuntuMono } from "@/@types/font/Font";
 import "./globals.css";
 import { ThemeProvider } from "@/components/themes/theme-provider";
+import Nav from "@/components/webcomp/navigation/Nav";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -21,7 +22,10 @@ export default function RootLayout({
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange>
-					{children}
+					<div>
+						<Nav />
+					</div>
+					<div className={`p-4`}>{children}</div>
 				</ThemeProvider>
 			</body>
 		</html>
