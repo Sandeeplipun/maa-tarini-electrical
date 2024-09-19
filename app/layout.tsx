@@ -3,6 +3,7 @@ import { ubuntu, ubuntuMono } from "@/@types/font/Font";
 import "./globals.css";
 import { ThemeProvider } from "@/components/themes/theme-provider";
 import Nav from "@/components/webcomp/navigation/Nav";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -16,17 +17,19 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${ubuntu.variable} ${ubuntuMono.variable} antialiased`}>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange>
-					<div>
-						<Nav />
-					</div>
-					<div className={`p-4`}>{children}</div>
-				</ThemeProvider>
+			<body>
+				<Providers>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange>
+						<div>
+							<Nav />
+						</div>
+						<div className={`p-4`}>{children}</div>
+					</ThemeProvider>
+				</Providers>
 			</body>
 		</html>
 	);
