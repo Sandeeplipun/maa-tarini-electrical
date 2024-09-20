@@ -216,6 +216,7 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => (
         <img
           // @ts-ignore
           src={tweet.card.binding_values.thumbnail_image_large.image_value.url}
+          alt="Twitter Card"
           className="h-64 rounded-xl border border-neutral-200 object-cover shadow-sm dark:border-neutral-800"
         />
       )}
