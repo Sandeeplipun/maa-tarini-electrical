@@ -76,16 +76,16 @@
 
 	/* Footer */
 	.footer {
-		@apply md:px-[1rem] px-[0.5rem] py-[2rem] bg-[#0b1016] text-slate-400;
+		@apply md:px-[1rem] px-[0.5rem] py-[2rem] bg-gray-100 dark:bg-[#0b1016] text-gray-800 dark:text-slate-400;
 	}
 
 	.footer-main {
 		/* removing lg:grid-cols-4 */
-		@apply grid pb-[2rem] grid-cols-2 md:grid-cols-4 w-[80%] mx-auto md:gap-[2rem] gap-[1rem];
+		@apply grid grid-cols-2 lg:grid-cols-4 w-[80%] lg:w-[85%] mx-auto gap-8 pb-[2rem];
 	}
 
 	.footer-content {
-		@apply flex items-center md:justify-center space-x-3 md:space-x-6;
+		@apply flex items-center justify-center space-x-3 md:space-x-6;
 	}
 
 	.footer-logo {
@@ -125,7 +125,7 @@
 	}
 
 	.footer-map iframe {
-		@apply flex w-[320px] h-[230px] md:w-[1300px] md:h-[340px] items-center justify-center;
+		@apply flex w-[320px] h-[230px] sm:w-[600px] md:h-[340px] lg:w-[750px] xl:w-[1280px] items-center justify-center;
 	}
 
 	.footer-copyright {
