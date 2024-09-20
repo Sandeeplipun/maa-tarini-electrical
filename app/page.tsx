@@ -1,5 +1,3 @@
-import { DarkModeToggle } from "@/components/toggle/DarkModeToggle";
-
 export default function Home() {
 	return (
 		<main>
