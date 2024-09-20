@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/themes/theme-provider";
 import Nav from "@/components/webcomp/navigation/Nav";
 import { Providers } from "./providers";
+import Footer from "@/components/webcomp/footer/Footer";
 
 export const metadata: Metadata = {
 	title: "Maa Tarini Electrical",
@@ -28,8 +29,12 @@ export default function RootLayout({
 						<div>
 							<Nav />
 						</div>
-						<div className={`p-4 ${ubuntu.variable} ${ubuntuMono.variable} antialiased bgImage`}>
+						<div
+							className={`p-4 ${ubuntu.variable} ${ubuntuMono.variable} antialiased bgImage`}>
 							{children}
+						</div>
+						<div>
+							<Footer />
 						</div>
 					</ThemeProvider>
 				</Providers>
