@@ -34,7 +34,7 @@ const CarouselSlider: React.FC = () => {
 	return (
 		<main className="w-full max-w-7xl mx-auto px-1 sm:px-2 lg:px-4">
 			<div className="flex flex-col items-center justify-center">
-				<div className="w-full max-w-4xl mx-auto bg-slate-500 dark:bg-slate-300 bg-opacity-25 rounded-xl shadow-lg p-4">
+				<div className="w-full max-w-4xl mx-auto bg-slate-500 dark:bg-slate-300 bg-opacity-25 dark:bg-opacity-50 rounded-xl shadow-lg p-4">
 					<Carousel plugins={[plugin.current]} className="w-full">
 						<CarouselContent>
 							{slides.map((slide) => (
