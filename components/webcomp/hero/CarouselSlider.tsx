@@ -9,24 +9,21 @@ import {
 } from "@/components/ui/carousel";
 
 const slides = [
-  {
-    id: 1,
-    title: "Slide 1",
-    description: "This is the first slide",
-    image: "/images/img-1.png",
-  },
-  {
-    id: 2,
-    title: "Slide 2",
-    description: "This is the second slide",
-    image: "/images/img-2.png",
-  },
-  {
-    id: 3,
-    title: "Slide 3",
-    description: "This is the third slide",
-    image: "/images/C & S electric Certificate.jpeg",
-  },
+	{
+		id: 1,
+		title: "Slide 1",
+		image: "/images/img-1.png",
+	},
+	{
+		id: 2,
+		title: "Slide 2",
+		image: "/images/img-2.png",
+	},
+	{
+		id: 3,
+		title: "Slide 3",
+		image: "/images/C & S electric Certificate.jpeg",
+	},
 ];
 
 const CarouselSlider: React.FC = () => {
@@ -35,12 +32,10 @@ const CarouselSlider: React.FC = () => {
 	);
 
 	return (
-		<main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<main className="w-full max-w-7xl mx-auto px-1 sm:px-2 lg:px-4">
 			<div className="flex flex-col items-center justify-center">
-				<div className="w-full max-w-4xl mx-auto bg-slate-300 rounded-xl shadow-lg p-4">
-					<Carousel
-						plugins={[plugin.current]}
-						className="w-full">
+				<div className="w-full max-w-4xl mx-auto bg-slate-500 dark:bg-slate-300 bg-opacity-25 rounded-xl shadow-lg p-4">
+					<Carousel plugins={[plugin.current]} className="w-full">
 						<CarouselContent>
 							{slides.map((slide) => (
 								<CarouselItem key={slide.id} className="relative">
