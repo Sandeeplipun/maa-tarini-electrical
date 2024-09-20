@@ -1,8 +1,9 @@
+import CarouselSlider from '@/components/webcomp/hero/CarouselSlider';
 export default function Home() {
 	return (
 		<main>
 			<div>
-				<h1>Hello World</h1>
+				<CarouselSlider />
 			</div>
 		</main>
 	);
