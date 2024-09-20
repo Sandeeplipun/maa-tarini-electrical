@@ -28,7 +28,9 @@ export default function RootLayout({
 						<div>
 							<Nav />
 						</div>
-						<div className={`p-4`}>{children}</div>
+						<div className={`p-4 ${ubuntu.variable} ${ubuntuMono.variable} antialiased`}>
+							{children}
+						</div>
 					</ThemeProvider>
 				</Providers>
 			</body>
