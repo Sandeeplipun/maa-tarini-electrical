@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
 					<div className={`footer-content`}>
 						<div className={`footer-data`}>
 							<h1>Our Pages</h1>
-							<p>About Owner</p>
+							<p>About</p>
 							<p>Services</p>
 							<p>Shop</p>
 							<p>Staff</p>
