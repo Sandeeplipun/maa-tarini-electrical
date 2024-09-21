@@ -24,7 +24,6 @@ const navItems = [
 	{ name: "Home", href: "/" },
 	{ name: "About", href: "/about" },
 	{ name: "Services", href: "/services" },
-	{ name: "Shop", href: "/shop" },
 	{ name: "Contact", href: "/contact" },
 ];
 
@@ -40,6 +39,14 @@ const Nav: React.FC = () => {
 		signOut();
 	};
 
+	const navItemsToShow = navItems.reduce((acc, item, index) => {
+		if (index === 3 && session) {
+			acc.push({ name: "Shop", href: "/shop" });
+		}
+		acc.push(item);
+		return acc;
+	}, [] as typeof navItems);
+
 	return (
 		<nav className="border-b shadow-md">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +59,7 @@ const Nav: React.FC = () => {
 					</div>
 					<div className="hidden md:block">
 						<div className="ml-10 flex items-baseline space-x-4">
-							{navItems.map((item) => (
+							{navItemsToShow.map((item) => (
 								<Link
 									key={item.name}
 									href={item.href}
@@ -102,7 +109,7 @@ const Nav: React.FC = () => {
 							</SheetTrigger>
 							<SheetContent side="right">
 								<div className="flex flex-col space-y-4 mt-4">
-									{navItems.map((item) => (
+									{navItemsToShow.map((item) => (
 										<Link
 											key={item.name}
 											href={item.href}
