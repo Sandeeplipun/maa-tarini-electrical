@@ -75,7 +75,7 @@ html {
 @layer base {
 	/* Background Image */
 	.bgImage {
-		@apply bg-[url('/assets/background/bg-white.png')] dark:bg-[url('/assets/background/bg.jpg')] w-full h-[calc(100vh-64px)] lg:h-[calc(100vh-65px)] bg-cover bg-no-repeat bg-center;
+		@apply bg-[url('/assets/background/bg-white.png')] dark:bg-[url('/assets/background/bg.jpg')] w-full h-[100dvh] bg-cover bg-center;
 	}
 
 	/* Footer */

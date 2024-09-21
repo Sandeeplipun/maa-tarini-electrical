@@ -113,7 +113,7 @@ const Partners: React.FC = () => {
 	}, []);
 
 	return (
-		<section className="py-12 bg-gray-100 dark:bg-slate-900 bg-opacity-50 rounded-xl">
+		<section className="py-12 bg-gray-300 dark:bg-slate-900 bg-opacity-50 rounded-xl shadow-xl">
 			<div className="container mx-auto px-4">
 				<h1 className="text-xl md:text-3xl font-bold text-center mb-8 underline">
 					Our trusted electrical partners
