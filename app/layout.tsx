@@ -30,7 +30,7 @@ export default function RootLayout({
 							<Nav />
 						</div>
 						<div
-							className={`p-4 ${ubuntu.variable} ${ubuntuMono.variable} antialiased bgImage`}>
+							className={`${ubuntu.variable} ${ubuntuMono.variable} antialiased bgImage`}>
 							{children}
 						</div>
 						<div>
