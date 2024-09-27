@@ -1,5 +1,6 @@
 import AboutLanding from "@/components/webcomp/landing/about/AboutLanding";
 import Hero from "@/components/webcomp/landing/hero/Hero";
+import Services from "@/components/webcomp/landing/services-index/Services";
 
 export default function Home() {
 	return (
@@ -11,6 +12,9 @@ export default function Home() {
 				</div>
 				<div className={`pt-4`}>
 					<AboutLanding />
+				</div>
+				<div>
+					<Services />
 				</div>
 			</div>
 		</main>
