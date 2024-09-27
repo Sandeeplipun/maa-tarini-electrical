@@ -138,5 +138,8 @@ html {
 }
 
 @layer components {
-	/* Navigation */
+	.intro-header {
+		clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+		@apply bg-[linear-gradient(135deg,theme(colors.blue.400),theme(colors.purple.500))] dark:bg-[linear-gradient(135deg,theme(colors.blue.600),theme(colors.purple.700))] text-center lg:p-16 py-24 p-10 shadow-xl;
+	}
 }

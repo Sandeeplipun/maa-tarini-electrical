@@ -17,23 +17,23 @@ const partnerImages = [
 	},
 	{
 		id: 3,
+		name: "BPL",
+		image: "/assets/companyLogos/BPLLogo.png",
+	},
+	{
+		id: 4,
 		name: "Cona",
 		image: "/assets/companyLogos/ConaLogo.png",
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Crompton Greaves",
 		image: "/assets/companyLogos/CromptonGreavesLogo.png",
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "C & S",
 		image: "/assets/companyLogos/CSElectricLogo.png",
-	},
-	{
-		id: 6,
-		name: "Doreka",
-		image: "/assets/companyLogos/DorekaLogo.png",
 	},
 	{
 		id: 7,
@@ -84,7 +84,12 @@ const partnerImages = [
 		id: 16,
 		name: "V-Guard",
 		image: "/assets/companyLogos/VguardLogo.png",
-	}
+	},
+	{
+		id: 17,
+		name: "Wyzr",
+		image: "/assets/companyLogos/WyzrLogo.png",
+	},
 ];
 
 const Partners: React.FC = () => {
@@ -118,10 +123,7 @@ const Partners: React.FC = () => {
 				<h1 className="text-xl md:text-3xl font-bold text-center mb-8 underline">
 					Our trusted electrical partners
 				</h1>
-				<div 
-					ref={scrollRef}
-					className="overflow-hidden"
-				>
+				<div ref={scrollRef} className="overflow-hidden">
 					<div className="flex">
 						{[...partnerImages, ...partnerImages].map((partner, index) => (
 							<div
@@ -129,8 +131,7 @@ const Partners: React.FC = () => {
 								className={cn(
 									"flex-shrink-0 w-[200px] px-4",
 									"transition-all duration-300 ease-in-out hover:scale-110"
-								)}
-							>
+								)}>
 								<div className="bg-white dark:bg-slate-200 rounded-lg shadow-md p-4 h-32 flex items-center justify-center">
 									<Image
 										src={partner.image}
