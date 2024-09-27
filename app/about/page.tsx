@@ -1,4 +1,4 @@
-import Content from "@/components/webcomp/about/Content";
+import AboutBody from "@/components/webcomp/about/AboutBody";
 import Intro from "@/components/webcomp/about/Intro";
 import React from "react";
 
@@ -8,7 +8,7 @@ const page: React.FC = () => {
 			{/* Added padding-top equal to nav height */}
 			<div>
 				<Intro />
-				<Content />
+				<AboutBody />
 			</div>
 		</main>
 	);
