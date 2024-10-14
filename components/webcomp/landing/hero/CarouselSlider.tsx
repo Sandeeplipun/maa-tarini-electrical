@@ -24,6 +24,16 @@ const slides = [
 		title: "Slide 3",
 		image: "/images/C & S electric Certificate.jpeg",
 	},
+	{
+		id: 4,
+		title: "Slide 4",
+		image: "/images/Maa_Durga_Khannagar.jpeg",
+	},
+	{
+		id: 5,
+		title: "Slide 5",
+		image: "/images/Durga_Puja_Poster.png",
+	}
 ];
 
 const CarouselSlider: React.FC = () => {
