@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@auth/core": "0.34.2",
+    "@heroicons/react": "^2.1.5",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-alert-dialog": "^1.1.2",
@@ -49,7 +50,7 @@
     "embla-carousel": "^8.3.0",
     "embla-carousel-autoplay": "^8.3.0",
     "embla-carousel-react": "^8.3.0",
-    "framer-motion": "^11.5.5",
+    "framer-motion": "^11.11.10",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.453.0",
     "next": "14.2.16",
