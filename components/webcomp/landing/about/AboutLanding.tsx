@@ -10,9 +10,9 @@ const AboutLanding: React.FC = () => {
 				<div className={`w-full h-full`}>
 					<h1 className={`text-2xl md:text-3xl font-bold`}>About</h1>
 					<p className={`mt-4`}>
-						I established this electrical shop in 2014 in our locality
+						I established this electrical shop in 2012 in our locality
 						partnering with various top brands distributors and providing the
-						best quality products and service since 2014. My technicians are
+						best quality products and service since 2012. My technicians are
 						well versed in all repairing and wiring skills. Here in my shop all
 						types of electrical appliances such as Geyser, Water Heater, Grinder
 						Motors, Ceiling Fans, etc. are repaired here. We sell variety of
